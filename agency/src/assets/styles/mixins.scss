@@ -1,0 +1,51 @@
+@import './colors.scss';
+
+@mixin button {
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  color: $pink;
+  border: 2px solid $pink;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+@mixin hoverText {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+@mixin hoverBtn {
+  &:hover {
+    background: #8d448b;
+    color: #fff;
+  }
+
+  &:active {
+    background: #8d448b;
+    color: #fff;
+  }
+}
+
+@mixin bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1.5px;
+  color: #0f2137;
+}
