@@ -1,0 +1,155 @@
+.footer {
+  &::before {
+    content: '';
+    width: 1920px;
+    height: 90px;
+    position: absolute;
+    z-index: -1;
+    background: #f3f4f5;
+  }
+
+  &-container {
+    width: 1290px;
+    margin: 0 auto;
+  }
+
+  &-hire {
+    width: 1290px;
+    height: 200px;
+    background: $pink;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 249px;
+      height: 120px;
+      position: absolute;
+      left: 56%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      background: url('../images/fon1.png') no-repeat;
+    }
+
+    div {
+      width: 521px;
+      @include title;
+      font-size: 36px;
+      line-height: 55px;
+      color: $white;
+      margin-top: 45px;
+      margin-left: 70px;
+    }
+
+    button {
+      position: relative;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      color: #8d448b;
+      @include button;
+      width: 260px;
+      height: 60px;
+      background: $white;
+      border-radius: 5px;
+      margin-top: 70px;
+      margin-right: 82px;
+      transition: background 0.25s;
+
+      &:hover {
+        background: rgb(246, 221, 250);
+      }
+
+      &::before {
+        content: '';
+        width: 73.41px;
+        height: 25.74px;
+        position: absolute;
+        top: -25px;
+        right: 50px;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background: url('../images/fon2.png') no-repeat;
+        cursor: default;
+      }
+
+      &::after {
+        content: '';
+        width: 73.41px;
+        height: 25.74px;
+        position: absolute;
+        bottom: -35px;
+        left: 97px;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background: url('../images/fon2.png') no-repeat;
+        transform: rotate(180deg);
+        cursor: default;
+      }
+    }
+  }
+
+  &-bottom {
+    margin-top: 40px;
+    padding-bottom: 61.05px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      width: 382px;
+      height: 37px;
+
+      .logo {
+        font-family: 'SF Pro Display';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #02073e;
+        padding-left: 14px;
+        transition: opacity 0.25s;
+      }
+
+      .text {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: $main;
+        opacity: 0.6;
+        margin-left: 6px;
+      }
+    }
+
+    &__nav {
+      ul {
+        display: flex;
+        column-gap: 30px;
+
+        li {
+          a {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 33px;
+            color: #02073e;
+            cursor: pointer;
+            transition: opacity 0.25s;
+            position: relative;
+            @include hoverText;
+          }
+        }
+      }
+    }
+  }
+}

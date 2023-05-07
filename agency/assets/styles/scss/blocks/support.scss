@@ -1,0 +1,68 @@
+.support {
+  padding-top: 147px;
+
+  &-container {
+    width: 1203px;
+    margin: 0 auto;
+  }
+
+  &-content {
+    display: flex;
+    column-gap: 90px;
+
+    &__img {
+      transition: transform 1s ease-in-out;
+    }
+
+    &__text {
+      width: 525px;
+      padding-top: 143px;
+      transition: transform 1s ease-in-out;
+
+      h1 {
+        @include title;
+        padding-bottom: 24px;
+      }
+
+      p {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 35px;
+        color: $grey;
+        padding-bottom: 24px;
+      }
+
+      div {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 34px;
+        color: $main;
+        opacity: 0.6;
+        padding-bottom: 10px;
+      }
+
+      button {
+        cursor: pointer;
+        transition: all 0.25s;
+        color: #8d448b;
+        @include hoverText;
+
+        svg {
+          transform: rotate(90deg);
+          transition: all 0.25s;
+        }
+
+        &:hover {
+          svg {
+            transform: rotate(180deg);
+            fill: #c85bc4;
+          }
+        }
+      }
+    }
+  }
+}
