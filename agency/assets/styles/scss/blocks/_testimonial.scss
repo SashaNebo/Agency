@@ -98,3 +98,53 @@
     }
   }
 }
+
+@media (max-width: 950px) {
+
+  .testimonial {
+
+    &-container {
+      width: 80vw;
+    }
+
+    &-content {
+
+      &__text {
+        font-size: 27px;
+        line-height: 60px;
+        padding-bottom: 90px;
+      }
+
+      &__users {
+        width: 75vw;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .testimonial {
+
+    &-content {
+
+      &__suptitle {
+        text-align: center;
+      }
+
+      &__title {
+        font-size: 28px;
+        line-height: 40px;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+
+      &__text {
+        font-size: 20px;
+        line-height: 40px;
+      }
+    }
+  }
+}

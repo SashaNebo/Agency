@@ -81,3 +81,85 @@
     }
   }
 }
+
+@media (max-width: 1350px) {
+
+  .blog {
+
+    &-container {
+      width: 90vw;
+    }
+
+    &-content {
+
+      &__course {
+        gap: 60px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &-item {
+
+          .comments {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .blog {
+
+    &-container {
+      width: 90vw;
+    }
+
+    &-content {
+
+      h1 {
+        text-align: center;
+      }
+
+      &__course {
+        gap: 60px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &-item {
+          width: 50%;
+
+          .text {
+            text-align: center;
+          }
+
+          .comments {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .blog-content__course {
+    width: 150vw;
+  }
+
+  .blog-content__course-item {
+    height: fit-content;
+  }
+
+  .blog-content__course-item .text {
+    font-size: 15px;
+  }
+}

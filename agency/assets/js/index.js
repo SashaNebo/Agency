@@ -1,5 +1,4 @@
 // --- Smooth scroll
-
 let isPlay = false
 
 const menuLink = document.querySelectorAll('.menu-link')
@@ -24,7 +23,6 @@ const scrollToSection = e => {
 menuLink.forEach(link => link.addEventListener('click', scrollToSection))
 
 // --- Scroll nav
-
 window.onscroll = function showNav() {
   let nav = document.querySelector('.nav')
 
@@ -50,7 +48,6 @@ const toggleNav = () => {
 navBtn.addEventListener('click', toggleNav)
 
 // --- Video
-
 const handleVideo = ({ target }) => {
   isPlay = !isPlay
   videoButton.classList.toggle('hidden')
@@ -60,7 +57,6 @@ const handleVideo = ({ target }) => {
 videoButton.addEventListener('click', handleVideo)
 
 // sectionAnimation
-
 const handleScroll = () => {
   const { scrollY: y, innerHeight: h } = window
   sections.forEach(sec => {
@@ -83,3 +79,10 @@ const closeModal = () => {
 
 registerBtn.addEventListener('click', openModal)
 closeBtn.addEventListener('click', closeModal)
+
+const burgerBtn = document.querySelector('.burger-btn')
+const burgerBox = document.querySelector('.burger-box')
+burgerBtn.onclick = () => {
+  burgerBtn.classList.toggle('active')
+  burgerBox.classList.toggle('hidden')
+}

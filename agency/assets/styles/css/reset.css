@@ -51,4 +51,8 @@ li {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=reset.css.map */

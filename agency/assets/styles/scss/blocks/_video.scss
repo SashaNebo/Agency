@@ -1,3 +1,6 @@
+@import './colors.scss';
+@import './mixins.scss';
+
 .video {
   padding-top: 160px;
 
@@ -102,5 +105,107 @@
       opacity: 0.2;
       margin-top: 50px;
     }
+  }
+}
+
+@media (max-width: 1250px) {
+
+  .video {
+
+    &-container {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+
+  .video {
+
+    &-content {
+
+      &__items {
+
+        &::after {
+          height: 55.3vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .video {
+
+    &-content {
+
+      &__title {
+        width: 80vw;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      &__subtitle {
+        width: 85vw;
+      }
+
+      &__items {
+
+        &-btn {
+          width: 80px;
+          height: 80px;
+
+          img {
+            position: absolute;
+            top: 54%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px 15px 15px 20px
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .video {
+
+    &-content {
+
+      &__title {
+        width: 80vw;
+        font-size: 35px;
+        line-height: 45px;
+      }
+
+      &__subtitle {
+        width: 85vw;
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .video {
+
+    &-content {
+
+      &__title {
+        font-size: 9vw;
+      }
+
+      &__subtitle {
+        font-size: 12px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .video-content__items-btn {
+    width: 20vw;
+    height: 20vw;
   }
 }

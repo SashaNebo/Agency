@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import './blocks/colors';
 
 body {
   font-family: 'DM Sans', sans-serif;
@@ -53,4 +53,8 @@ li {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.hidden {
+  display: none;
 }
